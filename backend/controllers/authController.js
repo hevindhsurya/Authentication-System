@@ -19,9 +19,9 @@ exports.register = async (req, res) => {
 
 // LOGIN
 exports.login = async (req, res) => {
-  const { emailOrUsername, password } = req.body;
+  const { identifier, password } = req.body;
   const user = await User.findOne({
-    $or: [{ email: emailOrUsername }, { name: emailOrUsername }]
+    $or: [{ email: identifier }, { name: identifier }]
   });
 
   if (!user || !(await bcrypt.compare(password, user.password))) {
