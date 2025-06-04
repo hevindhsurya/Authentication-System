@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/hevindhsurya/Authentication-System/issues"
   },
-  "homepage": "https://github.com/hevindhsurya/Authentication-System#readme"
+  "homepage": "https://github.com/hevindhsurya/Authentication-System#readme",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.1"
+  }
 }
